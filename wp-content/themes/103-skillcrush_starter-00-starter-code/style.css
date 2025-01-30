@@ -762,3 +762,131 @@ body {
     font-size: 2.5em;
 }
 /* End PAGE STYLES */
+
+/*ACCESSIBILITY STYLES*/
+/* Text meant only for screen readers. */
+.screen-reader-text{
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+	/* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+.screen-reader-text:focus{
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus{
+	outline: 0;
+}
+/*End ACCESSIBILITY STYLES*/
+
+/* HOMEPAGE STYLES */
+.home {
+	width: 100%;
+	background: url(img/Skillcrush_Computer.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.home .page-header {
+	display: none;
+}
+.home .content {
+	max-width: 600px;
+	background: #ffffff;
+	padding: 3em;
+}
+.home .main-content {
+	display: block;
+	width: 100%;
+	padding: 4em 0;
+}
+.home .content h1 {
+	font: 700 2.25em/1.5 'Montserrat', 'OpenSans', Arial, sans-serif;
+	margin: 0 0 1em;
+}
+.home .content p {
+	font: 1em/2 'OpenSans', Arial, sans-serif;
+	margin-bottom: 2em;
+}
+.home .content p a {
+	font-weight: 600;
+	text-decoration: underline;
+	color: #3b3b3b;
+}
+.home .content .social-btns {
+	margin-bottom: 1.875em;
+}
+.home .content .social-btns a {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	margin-right: .5em;
+}
+.home .content .soc-icon.tw {
+	background: url(img/twitter-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.home .content .soc-icon.fb {
+	background: url(img/facebook-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.home .content .soc-icon.ln {
+	background: url(img/linkedin-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.home .content .soc-icon.db {
+	background: url(img/dribbble-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.home .content .soc-icon.gh {
+	background: url(img/github-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.home .content .soc-icon.in {
+	background: url(img/instagram-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.home .btn {
+	background: #45ac9d;
+	color: #fff;
+	font: 700 1.125em/3.5 'Montserrat', 'OpenSans', Arial, sans-serif;
+	display: inline-block;
+	height: 3.5em;
+	width: 100%;
+	padding: 0 1.25em;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+	.home .main-content {
+		float: right;
+	}
+	.home .content {
+		float: right;
+	}
+}
+/* End HOMEPAGE STYLES */
